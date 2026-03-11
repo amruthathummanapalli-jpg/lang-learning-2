@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("=== Language Learning App ===");
+        System.out.println("Choose a Language:");
+        System.out.println("1. English");
+        System.out.println("2. Hindi");
+        System.out.println("3. Spanish");
+
+        int choice = sc.nextInt();
+
+        System.out.println("\nLesson:");
+
+        switch(choice) {
+
+            case 1:
+                System.out.println("English Words:");
+                System.out.println("Hello");
+                System.out.println("Thank You");
+                System.out.println("Good Morning");
+                break;
+
+            case 2:
+                System.out.println("Hindi Words:");
+                System.out.println("Hello = Namaste");
+                System.out.println("Thank You = Dhanyavaad");
+                System.out.println("Good Morning = Suprabhat");
+                break;
+
+            case 3:
+                System.out.println("Spanish Words:");
+                System.out.println("Hello = Hola");
+                System.out.println("Thank You = Gracias");
+                System.out.println("Good Morning = Buenos Dias");
+                break;
+
+            default:
+                System.out.println("Invalid choice");
+        }
+
+        sc.close();
+    }
+}
